@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    white-space: nowrap; /* 防止內容換行 */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.no-style {
+    color: inherit; /* 繼承父元素的文字顏色 */
+    text-decoration: none; /* 移除底線 */
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+#about {
+    background: #f4f4f4;
+}
+
+#resume {
+    background: #e2e2e2;
+}
+
+#projects {
+    background: #d1d1d1;
+}
+
+#contact {
+    background: #c0c0c0;
+}
+
+/* 去除超連結的顏色和底線 */
+.no-style {
+    color: inherit; /* 繼承父元素的顏色 */
+    text-decoration: none; /* 去除底線 */
+}
+
+/* 彈出窗口樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* 彈出窗口的內容 */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* 關閉按鈕樣式 */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.button-link {
+    color: black;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    color: blue; /* 改變字體顏色為你想要的顏色 */
+}
+
