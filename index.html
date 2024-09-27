@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網頁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>我的個人網頁</h1> 
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#resume">學經歷</a></li>
+                <li><a href="#projects">個人專案</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>關於我</h2>
+
+        <img src="myphoto.jpg" alt="個人照片" style="max-width: 150px; height: auto; border-radius: 50%;">
+        <p>我是鄭羽農，是東華大學經濟學系&資訊工程學系的學生 <!--幫我寫換行-->
+        <br>
+        感興趣的領域
+        <ol>
+            <li>資料探勘</li>
+            <li>機器學習</li>
+            <li>金融數據分析</li>
+        </ol>
+        </p>
+        
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2>學經歷</h2>
+        <div class="container">
+            <a href="#" id="showImage1" class="button-link">1. 中美貿易戰對台灣出口至中國和美國的影響 - 校內專題優勝</a>
+    
+            <!-- 模態窗口 -->
+            <div id="imageModal1" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage1" src="專題優勝獎狀.jpg" alt="專題照片">
+            </div>
+            <br>
+    
+            <a href="#" id="showVideo" class="button-link">2. 利用股價預測模型與投資組合管理之多元股票網站 - 專題製作</a>
+            <div id="videoModal" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <iframe id="modalVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <a href="#" id="showImage2" class="button-link">3. 系上成績優異獎</a>
+            <!-- 模態窗口 -->
+            <div id="imageModal2" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage2" src="成績優異.jpg" alt="成績">
+            </div>
+            <br>
+    
+            4. 新增系所網頁功能:
+            <a href="https://econ.ndhu.edu.tw/" target="_blank" class="button-link"> 首頁橫幅照片輪播連結、</a>
+            <a href="https://rc024.ndhu.edu.tw/p/404-1061-4309.php?Lang=zh-tw" target="_blank" class="button-link">師資陣容的頁面編排</a>
+            <br>
+    
+            <a href="#" id="showImage3" class="button-link">5. 擔任心理統計、經濟學原理、財政學的課程助教</a>
+            <div id="imageModal3" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage3"  src="TA證書.jpg" alt="TA證書">
+            </div>
+            <br>
+    
+
+            6. 證券商業務員證照
+        </div>
+    </section>
+    
+    
+    <section id="projects">
+        <h2>個人專案</h2>
+        <ul>
+            <li>
+                <h3><a href="shoot.html" target="_blank" class="button-link">2D縱向卷軸射擊遊戲(JavaScript製作)</a></h3>
+                <a href="shoot_game.rar" download class="button-link">下載遊戲 (RAR 格式)</a>
+            </li>
+            <!-- 可以在這裡添加更多專案 -->
+            <li>
+                <h3>CAPM 股票投資組合</h3>
+                <a href="CAPM股票投資組合.pdf" target="_blank" class="button-link">查看 PDF</a>
+            </li>
+            <li>
+                <h3>個股財報爬蟲</h3>
+                <a href="個股財報爬蟲數據.xlsx" target="_blank" class="button-link">查看財報數據</a>
+                <a href="爬公開財報.ipynb" download class="button-link">下載爬蟲程式 (.ipynb)</a>
+
+            </li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
