@@ -5,9 +5,33 @@ body {
     margin: 0;
     padding: 0;
 }
+.info-box {
+    display: inline-block;
+    border: 2px solid #B0A99F; /* 灰米色邊框 */
+    border-radius: 5px; /* 邊角圓滑 */
+    padding: 2px; /* 內邊距 */
+    background-color: #E6E1D3; /* 灰米色背景 */
+    text-align: center; /* 文字置中 */
+    text-decoration: none; /* 去掉下劃線 */
+    color: black; /* 灰米色文字 */
+    position: relative; /* 為後面的提示提供位置基準 */
+    transition: background-color 0.3s, border-color 0.3s; /* 增加過渡效果 */
+    font-size: 12px; /* 調整字體大小 */
 
+}
+
+.info-box:hover {
+    background-color: #D1CCBF; /* 懸停時的背景顏色 */
+    border-color: #8A7B6C; /* 懸停時的邊框顏色 */
+}
+
+.info-box::after {
+    color: #666; /* 提示顏色 */
+    display: block; /* 使提示顯示為塊元素 */
+    margin-top: 5px; /* 上邊距 */
+}
 header {
-    background: #333;
+    background: black;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -72,12 +96,13 @@ h2 {
 }
 
 .modal-content {
-    margin: 10% auto;
-    padding: 20px;
-    /* background: white; */
-    width: 100%;
-    max-width: 700px;
-    max-height: 800px;
+    margin: auto; /* 讓內容居中 */
+    padding: 0; /* 取消內邊距，讓圖片更貼合 */
+    width: auto; /* 自動寬度 */
+    height: auto; /* 自動高度 */
+    max-width: 90%; /* 最大寬度，防止超出視窗 */
+    max-height: 90%; /* 最大高度，防止超出視窗 */
+    overflow: hidden; /* 隱藏溢出的內容 */
 }
 
 .close {
