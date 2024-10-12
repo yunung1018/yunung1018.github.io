@@ -1,108 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人網頁</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+            white-space: pre-wrap; /* 允許自動換行 */
+        }
+        code {
+            font-family: monospace; /* 使用等寬字型 */
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body  id="about">
     <header>
-        <h1>我的個人網頁</h1> 
+        <h1>我的個人網頁</h1>
         <nav>
             <ul>
                 <li><a href="#about">關於我</a></li>
                 <li><a href="#resume">學經歷</a></li>
-                <li><a href="#projects">個人專案</a></li>
             </ul>
         </nav>
     </header>
 
+
     <section id="about">
         <h2>關於我</h2>
+        <img src="myphoto.jpg" alt="個人照片" class="profile-photo">
+        <p>我是鄭羽農，是<strong>東華大學經濟學系&資訊工程學系</strong>的應屆畢業生， <strong>將來想要往資料科學家和後端工程師發展。</strong></p>
+        <h2>個人簡介和申請動機</h2>
+        <ul>
+            <li>透過學習了兩個不同領域的學科，不僅讓我<strong>跳脫舒適圈</strong>，也磨練了我的思維靈活度與學習能力。透過長期自律和專注，我能夠在學業上保持良好成績，
+                並在專題製作中發揮團隊合作與溝通的能力，成功將所學知識應用於實際情境中。我熱衷於自主學習，持續吸收新知識，並不斷精進自己的專業技能。
+                <br>
+           <li> 我秉持<strong>「Fail Fast, Succeed Faster」的信念</strong>，面對挑戰時我會迅速採取行動，
+            並透過實踐來不斷優化解決方案。這種方法使我能夠快速發現問題、修正錯誤，並提升解決問題的速度和效率。
+            這也是我面對困難和壓力時的核心策略，讓我在快速變化的環境中能夠持續前進並不斷成長。</li>
 
-        <img src="myphoto.jpg" alt="個人照片" style="max-width: 150px; height: auto; border-radius: 50%;">
-        <p>我是鄭羽農，是東華大學經濟學系&資訊工程學系的學生 <!--幫我寫換行-->
-        <br>
-        感興趣的領域
-        <ol>
-            <li>資料探勘</li>
-            <li>機器學習</li>
-            <li>金融數據分析</li>
-        </ol>
-        </p>
+        <li>
+            我曾經看過藥師學姊的畢業心得，對於未來生活的想像，
+            我希望不僅僅是每天在科技業辛苦工作，而是能夠實現一個良好的<strong>work life balance</strong>。自從第三屆的時候，
+            我就一直關注這個 bootcamp(價格也一直在調漲......)，但由於當時沒有多餘的時間參加，因此無法參與。然而，這次我下學期將結束學業，
+            將有足夠的時間全心投入學習。面對畢業季，在尋找工作的過程中，我發現自己的專業能力仍有很大的提升空間。
+            <strong>我渴望能夠獨立完成一個完整的專案，渴望成為一個真正的軟體工程師</strong>，而不僅僅是一個會寫程式的人。因此，我決定參加這個訓練計畫。
+            我希望我能夠在這個訓練計畫中學到更多的技術，並且將這些技術應用到實際的專案中，因此，我決定參加這個訓練計畫。
+        </li>
+        <a href="自傳檔案.pdf" target="_blank" >提供我的自傳檔案</a>
+    </ul>        
+    <h2>軟體工程相關學習與作品</h2>
+        <p>以下是我曾完成的作品與技術應用：</p>
+        <ul>
+            <li>
+                <strong>股價預測與投資組合管理網站</strong>：這是一個多元股票投資組合平台，利用深度學習和時序模型進行股價預測，並提供風險評估與投資建議。在該專案中，我負責預測模型構建及爬蟲財報。
+                <br>
+                <a href="#" id="showVideo" class="button-link">點擊展示影片</a>
+                <div id="videoModal" class="modal">
+                    <!-- <span class="close">&times;</span> -->
+                    <div class="modal-content">
+                        <iframe id="modalVideo" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong>Kaggle 競賽</strong>：我在 Kaggle 上參加了數據分析競賽，從中學會了如何處理大規模數據，並運用機器學習技術進行預測分析。
+                <br>
+                <a href="https://www.kaggle.com/code/cyn1018/rf-xgb-knn-svm-with-wrapper-and-smote-enn-91" class="button-link" target="_blank">點擊連結到我的 Kaggle</a>
+            </li>
+            <li>
+                <strong>2D射擊遊戲 (JavaScript 開發)</strong>：這是一款使用 JavaScript 開發的 2D 縱向卷軸射擊遊戲，讓玩家體驗簡單的遊戲機制，同時增進了我的網頁開發技術。
+                <br>
+                <a href="shoot.html" target="_blank" class="button-link">點擊遊玩遊戲</a>
+            </li>
+            <li>
+               <strong>東華車友即時LINE BOT (已停止運行)</strong>：這是一個爬取FB貼文並且自動傳訊息到LINE BOT提醒的爬蟲專案。
+               <br>
+               <a href="#" id="showImage3" class="button-link">點擊展示專案照片</a>
+                <div id="imageModal3" class="modal">
+                    <!-- <span class="close">&times;</span> -->
+                    <img class="modal-content" id="modalImage3" src="東華LINE BOT.png" alt="">
+                </div>
+            </li>
+
+        </ul>
+
+        <h2>參與訓練的學習時間安排</h2>
+        <p>我會<strong>全職</strong>投入這個訓練，因為我已經完成了學校的課程，不再需要花費時間於其他學業。我將制定每日學習計劃，確保每天至少花 6-8 小時進行技術學習與實踐。
+        <ul>
+            <li><a href="https://youtu.be/EerdGm-ehJQ?si=JlsLWfzOe9l2TDKz" target="_blank" class="button-link">利用YT學習JavaScript</a></li>
+            <li><a href="https://www.youtube.com/@HungyiLeeNTU" target="_blank" class="button-link">透過李宏毅教授的課程學習機器學習</a></li>
+            <li><a href="https://www.youtube.com/@SJChenNUU" target="_blank" class="button-link">透過杰哥數位教室學習資料庫內容</a></li>
+        </ul>
         
         </p>
-    </section>
 
+        <h2>選擇投入領域的理由</h2>
+        <p>
+            我對後端、資料分析、深度學習特別感興趣，在大數據的時代，企業如何分析活用手上的數據是很重要的，
+            我認為LLM的企業應用也是將來的趨勢之一。
+
+            不論是後端工程師還是資料科學家要會的深度學習，都是我想要學習的內容， 
+            因為我認為這些技術在未來的發展中將會有很大的應用價值。 我再找實習工作的時候
+            ，有看見牙醫診所應用影像辨識的工程師徵求， 也有看見要精通python且也要會web開發並應用在AI專案上的工作， 
+            <strong>我的目標就是要成為能活用深度學習技術結合前後端的能力開發出系統專案</strong>，因此我希望能夠透過這個訓練計畫達到我的目的。
+
+        
+        </p>
+        
+        <h2>處理負面情緒的經歷</h2>
+        <p>去年我有去嘗試考資訊工程所，但很遺憾並沒有上榜，同時兼顧課業、專題、考研，讓我備感壓力，
+            最後的結果就是兩頭空，CPE也未達畢業標準所以延畢了一學期，也就是會到2025/02才能畢業，之後我也開始著手準備CPE
+            ，開始用python刷題，希望能夠在這學期順利畢業。
+            <br>
+          在考研失敗後，我在想的是我是不是真的需要這個學歷，
+            因為我其實對於資訊工程所的課程並不是很感興趣，我只是想要一個更好的學歷，<strong>但這真的是我要的嗎?</strong>
+            我開始對未來的方向有所迷惘，在查詢實習或是將來工作的就業網站時，看見企業列的程式能力要求，
+            我更是覺得自己甚麼都不會，頓時無限的挫折感湧上來，
+            
+            也許我考研究所只是在逃避就業的壓力，如果我有足夠的能力去達到就業的程式能力要求，有獨立製作專案、解決問題的能力
+            ，這時我還想讀研究所嗎?
+            <strong>答案是，我不想讀研究所。</strong>
+            
+            即使讀了研究所，在將來我還會面對到同樣的問題，<strong>成為軟體工程師，最重要的是能力，而不是學歷。</strong>
+            
+            於是我想起了彭彭的軟體工程師計畫，從之前就有想參加這個計畫的念頭，這次我想把握這次機會，
+
+           對我來說，考研為我帶來的是一個轉折點，讓我更清楚自己想要甚麼，想通了之後，迷惘的情緒也不再困擾著我
+           ，因為我相信我自己可以做到任何我想做的事情。
+
+
+        </p>
+        <h2>網頁開發心得</h2>
+        <p>
+            程式問題往往隨著開發過程的進行而不斷出現，
+            在開發這個申請網頁的過程中，我認為最困難的地方在於<strong>利用 JavaScript 來實現彈出和關閉圖片和影片功能</strong>，
+            一開始畫面整個無回應的跳不出影片，後來發現是因為我沒有將影片的連結放在 iframe 裡面，導致無法正常顯示。
+            再來則是無法關掉影片，因此用了一個x按鈕來關閉影片，
+            但我覺得按x不方便，我都是按旁邊空白處跟esc，所以改成兩個關閉影片的方法。
+            再改成ESC鍵關閉影片的時候，遇到了很大的困難，我在 DOMContentLoaded 事件觸發後添加了一個鍵盤事件監聽器，
+            當使用者按下 "Escape" 鍵時，我們期望能夠檢查按鍵並關閉所有打開的視窗。
+            實際測試中發現，即使按下 "Escape" 鍵，視窗依然保持打開狀態，沒有任何反應。
+            <pre>
+                <code>
+                document.addEventListener('DOMContentLoaded', function() {
+                    window.addEventListener('keydown', function(event) {
+                        if (event.key === 'Escape') {
+                            if (event.target == imageModal1) {
+                                imageModal1.style.display = 'none';
+                            }
+                            if (event.target == imageModal2) {
+                                imageModal2.style.display = 'none';
+                            }
+                            if (event.target == imageModal3) {
+                                imageModal3.style.display = 'none';
+                            }
+                            if (event.target == videoModal) {
+                                videoModal.style.display = 'none';
+                                videoIframe.src = ''; // 清除影片 URL 以停止播放
+                            }
+                        }
+                    });
+                });
+                </code>
+            </pre>
+            首先，我懷疑是沒有進入到IF判斷裡面，所以我先去F12的console點開照片影片後，按下esc後的查出現的event.target是甚麼
+            ，發現是showImage3和showVideo，所以是IF判斷錯誤
+            我把條件改成底下這樣子就沒有問題了。
+            <pre>
+                <code>
+            if (event.target == showImage3) {
+                imageModal3.style.display = 'none';
+            }
+            if (event.target == showVideo) {
+                videoModal.style.display = 'none';
+                videoIframe.src = ''; // 清除影片 URL 以停止播放
+            }
+        </code>
+    </pre>
+    再來這是第二種方法，我想直接跳過event.target判斷，採取只要偵測ESC就可以關掉視窗，直接針對imageModal3和videoModal操作
+            <pre>
+                <code>
+            function handleEscapePress(event) {
+                if (event.key === 'Escape') {
+                    if (imageModal1) imageModal1.style.display = 'none';
+                    if (imageModal2) imageModal2.style.display = 'none';
+                    if (imageModal3) imageModal3.style.display = 'none';
+                    if (videoModal) {
+                        videoModal.style.display = 'none';
+                        videoIframe.src = '';
+                    }
+                }
+            };
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                window.addEventListener('keydown', handleEscapePress);
+                
+            });
+        </code>
+    </pre>
+
+            
+        </p>
+        <h2>如何看待自身工作和整個社會群體的連結關係?</h2>
+        <p>軟體工程是一個非常特別的領域，開源社群活躍，大家熱衷於分享自己的成果並幫助解答他人的問題。
+            我經常使用 Stack Overflow 來尋找 bug 的解決方案，同時也喜歡回答別人的問題。在這樣的交流過程中，
+            我獲得了許多寶貴的知識和經驗。此外，我在 Kaggle 上分享的程式碼受到其他用戶的按讚後，讓我得到成就感。
+            <strong>能夠分享自己的成果，並與來自世界各地的工程師進行交流</strong>，正是我想要追求的方向。
+        </p>
+
+        <h2>其他想對你們說的話</h2>
+        <p>感謝您的閱讀，期待能有機會加入bootcamp計畫，
+            我會報名兩個計畫，因為不確定是否會錄取，但我希望能夠優先加入深度學習的計畫中，
+            因為我對前端的美感設計真的不是很擅長，
+            同時，深度學習我已經有一定的基礎，我想我可以利用時間去更深入的學習網頁開發技術，
+            而且我也有在自學python的經驗，我希望我可以最大化利用我的時間學習發揮出最大的效果。
+            <strong>我一定會完整參加整個計畫，並實作出一個應用深度學習的網站開發系統，這是我的未來所期望的職涯發展。</strong>
+        </p>
+    </section>
     <section id="resume">
         <h2>學經歷</h2>
         <div class="container">
-            <a href="#" id="showImage1" class="button-link">1. 中美貿易戰對台灣出口至中國和美國的影響 - 校內專題優勝</a>
-    
-            <!-- 模態窗口 -->
-            <div id="imageModal1" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="modalImage1" src="專題優勝獎狀.jpg" alt="專題照片">
-            </div>
-            <br>
-    
-            <a href="#" id="showVideo" class="button-link">2. 利用股價預測模型與投資組合管理之多元股票網站 - 專題製作</a>
-            <div id="videoModal" class="modal">
-                <span class="close">&times;</span>
-                <div class="modal-content">
-                    <iframe id="modalVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <br>
-            <a href="#" id="showImage2" class="button-link">3. 系上成績優異獎</a>
-            <!-- 模態窗口 -->
-            <div id="imageModal2" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="modalImage2" src="成績優異.jpg" alt="成績">
-            </div>
-            <br>
-    
-            4. 新增系所網頁功能:
-            <a href="https://econ.ndhu.edu.tw/" target="_blank" class="button-link"> 首頁橫幅照片輪播連結、</a>
-            <a href="https://rc024.ndhu.edu.tw/p/404-1061-4309.php?Lang=zh-tw" target="_blank" class="button-link">師資陣容的頁面編排</a>
-            <br>
-    
-            <a href="#" id="showImage3" class="button-link">5. 擔任心理統計、經濟學原理、財政學的課程助教</a>
-            <div id="imageModal3" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="modalImage3"  src="TA證書.jpg" alt="TA證書">
-            </div>
-            <br>
-    
-
+            <p id="showImage1" >1. 中美貿易戰對台灣出口至中國和美國的影響 - 校內專題優勝</p>
+            <p id="showVideo" >2. 利用股價預測模型與投資組合管理之多元股票網站 - 專題製作</p>
+            <p id="showImage2" >3. 系上成績優異獎</p>
+            <p >4.  首頁橫幅照片輪播連結、師資陣容的頁面編排</p>
+            <p id="showImage3">5. 擔任心理統計、經濟學原理、財政學的課程助教</p>
             6. 證券商業務員證照
         </div>
     </section>
-    
-    
-    <section id="projects">
-        <h2>個人專案</h2>
-        <ul>
-            <li>
-                <h3><a href="shoot.html" target="_blank" class="button-link">2D縱向卷軸射擊遊戲(JavaScript製作)</a></h3>
-                <a href="shoot_game.rar" download class="button-link">下載遊戲 (RAR 格式)</a>
-            </li>
-            <!-- 可以在這裡添加更多專案 -->
-            <li>
-                <h3>CAPM 股票投資組合</h3>
-                <a href="CAPM股票投資組合.pdf" target="_blank" class="button-link">查看 PDF</a>
-            </li>
-            <li>
-                <h3>個股財報爬蟲</h3>
-                <a href="個股財報爬蟲數據.xlsx" target="_blank" class="button-link">查看財報數據</a>
-                <a href="爬公開財報.ipynb" download class="button-link">下載爬蟲程式 (.ipynb)</a>
 
-            </li>
-        </ul>
-    </section>
 
     <script src="script.js"></script>
-    
 </body>
+
 </html>
