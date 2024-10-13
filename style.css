@@ -81,7 +81,7 @@ h2 {
     max-width: 150px;
     height: auto;
     border-radius: 50%;
-}
+} 
 
 /* 模態窗口樣式 */
 .modal {
@@ -103,6 +103,27 @@ h2 {
     max-width: 90%; /* 最大寬度，防止超出視窗 */
     max-height: 90%; /* 最大高度，防止超出視窗 */
     overflow: hidden; /* 隱藏溢出的內容 */
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+}
+
+.profile-photo {
+    width: 150px; /* 設定照片寬度 */
+    height: auto; /* 保持比例 */
+    margin-right: 20px; /* 照片和文字的間距 */
+}
+
+/* 去除鏈接的藍色底線和藍色字體 */
+.no-underline {
+    color: black; /* 設定字體顏色為黑色 */
+    text-decoration: none; /* 去除底線 */
+}
+.profile-info {
+    max-width: 1000px; /* 限制文字區域的最大寬度 */
 }
 
 .close {
