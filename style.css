@@ -100,9 +100,9 @@ h2 {
     padding: 0; /* 取消內邊距，讓圖片更貼合 */
     width: auto; /* 自動寬度 */
     height: auto; /* 自動高度 */
-    max-width: 90%; /* 最大寬度，防止超出視窗 */
-    max-height: 90%; /* 最大高度，防止超出視窗 */
-    overflow: hidden; /* 隱藏溢出的內容 */
+    max-width: 40%; /* 不限制最大寬度*/
+    max-height: 100%; /* 不限制最大高度  */
+    overflow: hidden; /* 顯示溢出的內容 */
 }
 
 

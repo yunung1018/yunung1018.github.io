@@ -12,9 +12,14 @@ var span = document.getElementsByClassName("close")[0];
 var showImage3 = document.getElementById("showImage3");
 var imageModal3 = document.getElementById("imageModal3");
 
+var showImage2 = document.getElementById("showImage2");
+var imageModal2 = document.getElementById("imageModal2");
 
 
-
+showImage2.onclick = function(event) {
+    event.preventDefault();
+    imageModal2.style.display = "flex";
+};
 
 showImage3.onclick = function(event) {
     event.preventDefault();
@@ -35,6 +40,9 @@ window.onclick = function(event) {
     if (event.target == imageModal3) {
         imageModal3.style.display = 'none';
     }
+    if (event.target == imageModal2) {
+        imageModal2.style.display = 'none';
+    }
     if (event.target == videoModal) {
         videoModal.style.display = 'none';
         videoIframe.src = ''; // 清除影片 URL 以停止播放
@@ -50,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (event.target == showImage3) {
                 imageModal3.style.display = 'none';
+            }
+            if (event.target == showImage2) {
+                imageModal2.style.display = 'none';
             }
             if (event.target == showVideo) {
                 videoModal.style.display = 'none';
