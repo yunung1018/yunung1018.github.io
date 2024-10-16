@@ -95,6 +95,22 @@ h2 {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+table {
+    width: 50%;
+    border-collapse: collapse; /* 讓表格邊框合併 */
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black; /* 為每個儲存格加上黑色邊框 */
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2; /* 增加標題背景色 */
+}
+
 .modal-content {
     margin: auto; /* 讓內容居中 */
     padding: 0; /* 取消內邊距，讓圖片更貼合 */
