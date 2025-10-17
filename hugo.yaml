@@ -1,5 +1,5 @@
 title: "cat flag"
-baseURL: "https://<USERNAME>.github.io/<REPO>/"
+baseURL: "https://yunung1018.github.io/"
 languageCode: 'en-us'
 titleCaseStyle: 'none' # comment this line for forcing capitalized titles on tags
 theme: "neopost"
