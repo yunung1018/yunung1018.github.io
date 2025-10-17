@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/%3CREPO%3E/posts/friends/</loc>
+  </url><url>
+    <loc>http://localhost:1313/%3CREPO%3E/posts/mysterious-meow/</loc>
+  </url><url>
+    <loc>http://localhost:1313/%3CREPO%3E/</loc>
+  </url><url>
+    <loc>http://localhost:1313/%3CREPO%3E/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/%3CREPO%3E/posts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/%3CREPO%3E/tags/</loc>
+  </url>
+</urlset>
