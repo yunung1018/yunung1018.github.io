@@ -8,24 +8,28 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: false # 禁用 submodule 同步
+          submodules: false  # 完全禁用 submodule
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.151.2'
+          extended: true
 
       - name: Build site
-        run: hugo --minify --themesDir ./themes # 確保 themes 路徑正確
+        run: hugo --minify
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          keep_files: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true
