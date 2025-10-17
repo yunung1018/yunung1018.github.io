@@ -1,0 +1,32 @@
+name: deploy to neocities
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: false # 禁用 submodule 同步
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.151.2' # 確保使用正確的 Hugo 版本
+
+      - name: Build site
+        run: cd example && hugo --gc --minify --buildFuture --themesDir ../../
+
+      - name: Deploy to Neocities
+        uses: bcomnes/deploy-to-neocities@v3
+        with:
+          api_key: ${{ secrets.NEOCITIES_API_KEY }}
+          cleanup: true
+          neocities_supporter: false
+          dist_dir: example/public
