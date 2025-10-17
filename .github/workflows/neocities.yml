@@ -21,7 +21,7 @@ jobs:
           hugo-version: '0.151.2' # 確保使用正確的 Hugo 版本
 
       - name: Build site
-        run: cd example && hugo --gc --minify --buildFuture --themesDir ../../
+        run: hugo --gc --minify --buildFuture --themesDir ./themes # 修改為正確的路徑
 
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
@@ -29,4 +29,4 @@ jobs:
           api_key: ${{ secrets.NEOCITIES_API_KEY }}
           cleanup: true
           neocities_supporter: false
-          dist_dir: example/public
+          dist_dir: public # 確保 Hugo 的輸出目錄正確
