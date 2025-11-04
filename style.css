@@ -1,0 +1,115 @@
+
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 基礎字體，清楚為主 */
+    background-color: #f7f3e8; /* 榻榻米/和室拉門的米白色 */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 關鍵：萬事屋木製招牌 */
+.yorozuya-signboard {
+    background-color: #8B4513; /* 木頭棕色 */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 5px solid #5a2d0c;
+}
+
+.yorozuya-signboard h1 {
+    font-family: 'Yuji Syuku', serif; /* 毛筆字體！靈魂所在 */
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.yorozuya-signboard p {
+    font-size: 0.9em;
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+/* 導覽列 */
+.main-nav {
+    background-color: #e0ddd3;
+    border-bottom: 2px solid #c0bdb5;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.main-nav li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 內容區域佈局 (懶洋洋的排版) */
+.content-area {
+    display: flex;
+    flex-wrap: wrap; /* 手機上會自動換行 */
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+#main-feed {
+    flex: 3; /* 占 3 份 */
+    min-width: 300px;
+}
+
+.sidebar {
+    flex: 1; /* 占 1 份 */
+    min-width: 250px;
+    margin-left: 20px;
+    padding: 15px;
+    background: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+
+/* 側邊欄頭像 (記得換成你的) */
+.profile-pic {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+/* 文章樣式 */
+.yorozuya-post {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.yorozuya-post h3 {
+    color: #8B4513;
+    border-bottom: 2px solid #f0e9d6;
+    padding-bottom: 5px;
+}
+
+/* 頁腳 */
+.yorozuya-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #e0ddd3;
+    color: #777;
+    font-size: 0.8em;
+    border-top: 1px solid #ccc;
+}
